@@ -1,0 +1,263 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'iter';
+    --botao-azul-efeito: #a43cfa;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario)
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    width: 70%;
+    min-width: 255px;
+    max-width: 355px;
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+    min-width: 255px;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: .1em;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__lista img {
+    width: 60%;
+    min-width: 160px;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link {
+    margin-left:  1em;
+}
+
+.lista__link a{
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    margin: 1em 0;
+    font-size: 14px;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+@media screen and (max-width: 900px) {
+    .principal {
+        background-image: url("img/Background-mobile.png") ;
+        background-size: cover;
+    }
+
+    .container {
+        display: inline-block;
+        margin: auto;
+    }
+
+    .container__caixa {
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .container__titulo, .container__descricao, .container__imagem {
+        font-size: 2em;
+    }
+
+    .container__descricao {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .container__aviso {
+        font-size: 20px;
+    }
+
+    .container__imagem {
+        max-width: none;
+        width: 70%;
+        height: auto;
+        margin: 3em 0;
+    }
+
+    .container__botao {
+        font-size: 1.5em;
+        width: 70%;
+        height: 40px;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .secundario {
+        width: 70%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: max-content;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .secundario__botao {
+        font-size: 1em;
+    }
+
+    .secundario__imagem {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .descricao__titulo, .descricao__texto {
+        height: auto;
+        margin-top: 10px;
+        font-size: smaller;
+    }
+
+    .descricao__titulo {
+        font-size: larger;
+    }
+
+    .dispositivos {
+        width: 90%;
+        margin: 0 2em;
+    }
+
+    .dispositivos__lista li img {
+        width: 100%;
+    }
+
+    .lista__item {
+        font-size: 1.5em;
+    }
+
+    .rodape {
+        width: 90%;
+        margin: 2em;
+    }
+}
+

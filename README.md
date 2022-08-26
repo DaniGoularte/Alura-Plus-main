@@ -10,3 +10,7 @@
 <div align="center">
   <img src="screencapture.png" alt="Imagem do Alura Plus" width="70%">
 </div>
+
+## 📁 Acesso
+É possivel acessar o site <a href="https://alura-plus-5zrbein4c-lucaslkj.vercel.app/">aqui</a>
+ou <a href="https://github.com/Lucas-Henrique-Barbosa/AluraPlus/archive/refs/heads/main.zip">baixá-lo</a>
